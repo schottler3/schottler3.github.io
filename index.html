@@ -1,23 +1,53 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>schottler3</title>
 </head>
-<html>
     <body>
-        <div class="header">
+        <div class="top">
             <div class="nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <div class="nav-item">Home</div>
+                <p class="navSep">|</p>
+                <div class="nav-item">About</div>
+                <p class="navSep">|</p>
+                <div class="nav-item">Projects</div>
+                <p class="navSep">|</p>
+                <div class="nav-item">Contact</div>
             </div>
-            <div class="title">
-                <h1>schottler3.github.io</h1>
+            <p id="title">schottler3.github.io</p>
+            <div class="social">
+                <a href="https://github.com/schottler3" class="icon">
+                    <img src="img/github-mark.png" alt="Github Logo, white" id="githubLogo">
+                </a>
+                <a href="https://www.linkedin.com/in/lucasschottler/" class="icon">
+                    <img src="img/LinkedIn-Blue-14@2x.png" alt="LinkedIn Logo, white" id="linkedinLogo">
+                </a>            
+            </div>
+        </div>
+        <div id="snows">
+            <section id="snowSec">
+            </section>
+            <div id="snowSelector">
+                <button class="snowButton" id="clear">Clear</button>
+                <button class="snowButton" id="flurry">Flurry</button>
+                <button class="snowButton" id="snowing" style="background-color: rgb(158, 239, 229);">Snowing</button>
+                <button class="snowButton" id="blizzard">Blizzard</button>
             </div>
         </div>
         <div class="article">
-            <h2>Welcome to schottler3.github.io</h2>
+            <div class="water"></div>
+            <p id="welcome">Welcome to <br>schottler3.github.io</p>
+            <p id="profolio">A profolio website for Lucas Schottler</p>
         </div>
+
+        <div class="footer">
+            <div class="footerItem">
+            </div>
+        </div>
+
+        <script src="js/index.js"></script>
+        
     </body>
 </html>
