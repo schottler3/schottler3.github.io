@@ -1,0 +1,95 @@
+.article {
+    min-width: auto;
+    margin-top: -2%;
+    margin-bottom: 6%;
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+        "left articleleft articleright right";
+}
+
+.contactInfo {
+    padding-left: 2%;
+    background-color: rgb(79, 124, 172);
+    border-radius: 10px 0 0 10px;
+    grid-area: articleleft;
+    align-items: center;
+}
+
+#contactTitle {
+    margin-top: -15%;
+    margin-bottom: 15%;
+    font-size: 2.25em;
+    font-weight: bold;
+    color: white;
+}
+
+.contactItem {
+    font-size: 2em;
+    color: rgb(60, 71, 75);
+    font-weight: bold;
+}
+
+.contactFormSide {
+    background-color: rgb(60, 71, 75);
+    grid-area: articleright;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+}
+
+h1 {
+    font-size: 2.25em;
+    color: rgb(158, 239, 229);
+}
+
+#contactForm {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5%;
+    border-radius: 10px;
+
+}
+
+#contactForm input {
+    background-color: rgb(79, 124, 172);;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+}
+
+#contactForm label {
+    font-size: 1.25em;
+    color: white;
+}
+
+#sub {
+    width: 50%;
+    margin: auto;
+    background-color: rgb(79, 124, 172);
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.contactInfo a {
+    text-decoration: none;
+    font-size: 1em;
+    padding-left: 2%;
+    color: white;
+}
+
+input:focus {
+    outline-color: rgb(158, 239, 229);
+}
+

@@ -73,7 +73,7 @@ function rollSnow(snow) {
   snow.style.opacity = 1;
   snow.dataset.rotation = 0;
   snow.dataset.rain = false;
-  snow.style.transform = `translate(${newX}px, -${snow.width}px)`;
+  snow.style.transform = `translate(${newX}px, -${snow.width*2}px)`;
 }
 
 function clickSnow(snow) {

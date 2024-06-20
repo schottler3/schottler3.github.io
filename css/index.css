@@ -1,89 +1,15 @@
-body {
-    
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    overflow: hidden;
-    background-color: rgb(22,37,33);
+.article {
+    background-image: url(../img/background.png);
+    background-position-y: top;
+    background-size: cover;
+    grid-area: article;
     display: grid;
-    font-family: Arial, sans-serif;
-    grid-template-rows: 1fr 3fr 10fr 1fr;
-
-    grid-template-areas:
-    "header"
-    "snows"
-    "article"
-    "footer";
-}
-
-.top {
-    position: fixed;
-    width: 100%;
-    grid-area: header;
-    display: grid;
-    
-    z-index: 1;
-    background-color: rgb(255,255,255);
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-areas: "headerleft headercenter headerright";
-}
-
-.nav {
-    padding: 0;
-    margin: 0;
-    padding-left: 2%;
-    grid-area: headerleft;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 140px 200px;
     user-select: none;
-}
-
-.nav-item {
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
-    display: inline-flex;
-    color: rgb(79, 124, 172);
-}
-
-.navSep {
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-flex;
-    color: rgb(60, 71, 75);
-}
-
-#title {
-    padding: 0;
-    margin: 0;
-    margin-top: 0;
-    grid-area: headercenter;
-    font-size: 2em;
-    font-weight: bold;
-    color: rgb(60, 71, 75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social {
-    grid-area: headerright;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.icon {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 5%;
-}
-
-#githubLogo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    grid-template-areas: 
+        "articleleft welcome"
+        "articleleft profolio";
 }
 
 #snows {
@@ -125,20 +51,6 @@ body {
     margin: 4px;
 }
 
-.article {
-    background-image: url(../img/background.png);
-    background-position-y: top;
-    background-size: cover;
-    grid-area: article;
-    display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-rows: 140px 200px;
-    user-select: none;
-    grid-template-areas: 
-        "articleleft welcome"
-        "articleleft profolio";
-}
-
 .water {
     position: absolute;
     bottom: 0;
@@ -165,27 +77,3 @@ body {
     font-size: 1.5em;
     color: rgb(79, 124, 172);
 }
-
-.footer {
-    margin-top: auto;
-    display: grid;
-    grid-area: footer;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "footerleft footercenter footerright";
-    background-color: rgb(255,255,255);
-    position: relative;
-
-}
-
-.footerItem {
-    display: flex;
-    grid-area: footercenter;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
-    color: rgb(60, 71, 75);
-    flex-direction: column;
-    margin: 0;
-    padding: 5%;
-}
-
