@@ -60,7 +60,7 @@ function spawnSnow(){
   });
   rollSnow(snow);
 
-  document.getElementById('snowSec').appendChild(snow);
+  document.getElementById('snows').appendChild(snow);
 }
 
 function rollSnow(snow) {
@@ -85,7 +85,7 @@ function clickSnow(snow) {
 
   let water = document.getElementsByClassName('water')[0];
   if (!water.dataset.height) {
-    water.dataset.height = 5;
+    water.dataset.height = 10;
   }
   water.dataset.height = parseFloat(water.dataset.height) + 0.5;
   water.style.height = water.dataset.height + '%';

@@ -1,0 +1,9 @@
+.article {
+    margin-top: 10%;
+    grid-area: article;
+    color: white;
+    display: flex;
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+}

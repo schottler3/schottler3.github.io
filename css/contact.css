@@ -1,6 +1,6 @@
 .article {
     min-width: auto;
-    margin-top: -2%;
+    margin-top: 8%;
     margin-bottom: 6%;
     grid-area: article;
     display: grid;
@@ -17,8 +17,8 @@
     align-items: center;
 }
 
-#contactTitle {
-    margin-top: -15%;
+#contactTitle { 
+    margin-top: -20%;
     margin-bottom: 15%;
     font-size: 2.25em;
     font-weight: bold;
@@ -43,6 +43,7 @@
 }
 
 h1 {
+    margin-bottom: 0%;
     font-size: 2.25em;
     color: rgb(158, 239, 229);
 }
