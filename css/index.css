@@ -6,7 +6,7 @@
     grid-area: article;
     bottom: 0;
     display: grid;
-    grid-template-rows: 25% 20% 10% 45%;
+    grid-template-rows: 25% 15% 10% 45%;
     grid-template-columns: 10% 45% 45%;
     grid-template-areas: 
     "snows snows snows"
@@ -48,13 +48,13 @@
     padding: 0;
     grid-area: welcome;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 5vh;
     color: rgb(158, 239, 229);
 }
 
 #portfolio{
     grid-area: portfolio;
-    font-size: 1.5em;
+    font-size: 3vh;
     color: rgb(79, 124, 172);
 }
 
@@ -67,6 +67,7 @@
     z-index: -1;
     background-image: url(../img/water.png);
     background-size: cover;
+    overflow: hidden;
 }
 
 .content {

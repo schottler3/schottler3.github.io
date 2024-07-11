@@ -1,10 +1,48 @@
 .article {
-    margin-top: 10%;
     grid-area: article;
     color: white;
-    display: flex;
-    font-size: 2em;
-    text-align: center;
-    justify-content: center;
+    display: grid;
+    margin-top: 0;
+    user-select: text;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 
+        "articleleft articlecenter articleright";
+}
 
+.articleleft {
+    grid-area: articleleft;
+}
+
+.articleCenter {
+    grid-area: articlecenter;
+}
+
+.articleright {
+    grid-area: articleright;
+}
+
+.text {
+    font-size: 1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.redir {
+    font-weight: bold;
+    color: rgb(79, 124, 172);
+    text-decoration: none;
+}
+
+.redir:hover {
+    color: rgb(158, 239, 229);
+    text-decoration: underline;
+}
+
+li {
+    margin-top: 2%;
+}
+
+#lang {
+    font-size: 1em;
+    color: rgb(79, 124, 172);
+    font-weight: bold;
 }

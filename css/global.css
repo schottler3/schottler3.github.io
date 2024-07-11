@@ -1,7 +1,6 @@
 body {
     margin: 0;
     min-height: 100vh;
-    overflow: hidden;
     user-select: none;
     background-color: rgb(22,37,33);
     display: grid;
@@ -17,7 +16,7 @@ body {
     width: 100%;
     grid-area: header;
     display: grid;
-    
+    position: fixed;
     z-index: 1;
     background-color: rgb(255,255,255);
     grid-template-columns: 2fr 1fr 2fr;
@@ -27,16 +26,20 @@ body {
 .nav {
     padding-left: 2%;
     grid-area: headerleft;
+    display: inline-flex;
+    align-items: center;
     user-select: none;
 }
 
 .nav-item {
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
-    display: inline-flex;
+    transition: font-size 0.3s ease-in-out;
+    font-size: 2.5vh;
     color: rgb(79, 124, 172);
     text-decoration: none;
+}
+
+.enlarged {
+    font-size: 2.8vh;
 }
 
 .nav a {
@@ -53,27 +56,27 @@ body {
 }
 
 .navSep {
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-flex;
+    font-size: 2.5vh;
+    margin-left: 5px;
+    margin-right: 5px;
+
     color: rgb(60, 71, 75);
 }
 
 #title {
-    padding: 0;
-    margin: 0;
-    margin-top: 0;
     grid-area: headercenter;
-    font-size: 2em;
+    font-size: 3vh;
     font-weight: bold;
     color: rgb(60, 71, 75);
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: text;
+}
+
+#title:hover {
+    cursor: url(../img/link.png), auto;
+    cursorSize: 32;
 }
 
 .social {
@@ -91,8 +94,8 @@ body {
 }
 
 #githubLogo {
-    width: 50px;
-    height: 50px;
+    width: 6vh;
+    height: auto;
     border-radius: 50%;
 }
 
