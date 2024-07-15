@@ -54,6 +54,11 @@ window.onload = function ()
 			snowButtonClick(snowButtons[i]);
 		});
 	}
+
+	window.addEventListener('resize', onWindowResize, false);
+
+    onWindowResize();
+
 	snows = document.getElementsByClassName('snow');
 
 	let water = document.getElementById('water');
@@ -62,6 +67,14 @@ window.onload = function ()
 	water.style.top = `calc(${footerTop}px - 5%)`;
 
 	update();
+}
+
+function onWindowResize() {
+    let water = document.getElementById('water');
+    let footer = document.getElementById('footer');
+    let newHeight = footer.getBoundingClientRect().top - water.getBoundingClientRect().top;
+
+    water.style.height = `${newHeight}px`;
 }
 
 function spawnSnow()
