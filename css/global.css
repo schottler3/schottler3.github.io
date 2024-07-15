@@ -12,7 +12,7 @@ body {
     "footer";
 }
 
-.top {
+#top {
     width: 100%;
     grid-area: header;
     display: grid;
@@ -23,7 +23,7 @@ body {
     grid-template-areas: "headerleft headercenter headerright";
 }
 
-.nav {
+#nav {
     padding-left: 2%;
     grid-area: headerleft;
     display: inline-flex;
@@ -42,7 +42,7 @@ body {
     font-size: 2.8vh;
 }
 
-.nav a {
+#nav a {
     text-decoration: none;
     color: rgb(79, 124, 172);
 }
@@ -76,7 +76,6 @@ body {
 
 #title:hover {
     cursor: url(../img/link.png), auto;
-    cursorSize: 32;
 }
 
 .social {
@@ -99,7 +98,7 @@ body {
     border-radius: 50%;
 }
 
-.footer {
+#footer {
     display: grid;
     grid-area: footer;
     grid-template-columns: 1fr 1fr 1fr;

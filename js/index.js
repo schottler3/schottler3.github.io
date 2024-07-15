@@ -56,6 +56,11 @@ window.onload = function ()
 	}
 	snows = document.getElementsByClassName('snow');
 
+	let water = document.getElementById('water');
+	let footer = document.getElementById('footer');
+	let footerTop = footer.getBoundingClientRect().top;
+	water.style.top = `calc(${footerTop}px - 5%)`;
+
 	update();
 }
 
@@ -104,6 +109,28 @@ function rollSnow(snow)
     snow.style.transform = `translate(${newX}px, -${newY}px)`;
 }
 
+function animeWater(snow) {
+    let size = parseFloat(snow.style.width);
+    let water = document.getElementById('water');
+
+    let currentHeight = parseFloat(window.getComputedStyle(water).height);
+
+    water.style.height = `${currentHeight + size}px`;
+
+    let currentTop = parseFloat(window.getComputedStyle(water).top);
+    water.style.top = `${currentTop - size}px`;
+}
+
+function checkWin() {
+	let top = document.getElementById('top');
+	let topBottom = top.getBoundingClientRect().bottom;
+
+	let water = document.getElementById('water');
+	let waterTop = water.getBoundingClientRect().top;
+
+	return waterTop < topBottom;
+}
+
 function clickSnow(snow)
 {
 	snow.dataset.speedX = .5;
@@ -112,12 +139,10 @@ function clickSnow(snow)
 	snow.dataset.rain = 'true';
 	snow.src = 'img/rain.png';
 
-	let water = document.getElementsByClassName('water')[0];
-	if (!water.dataset.height) {
-		water.dataset.height = 10;
-	}
-	water.dataset.height = parseFloat(water.dataset.height) + 0.5;
-	water.style.height = water.dataset.height + '%';
+	if(checkWin())
+    	alert('Flooded!');
+	else
+		animeWater(snow);
 }
 
 function snowButtonClick(snowButton)

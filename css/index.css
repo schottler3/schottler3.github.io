@@ -58,7 +58,7 @@
     color: rgb(79, 124, 172);
 }
 
-.water {
+#water {
     grid-area: article;
     position: absolute;
     bottom: 0;
@@ -68,6 +68,7 @@
     background-image: url(../img/water.png);
     background-size: cover;
     overflow: hidden;
+    transition: top 2s ease;
 }
 
 .content {

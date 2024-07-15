@@ -12,7 +12,7 @@ function showToast(message) {
     toast.textContent = message;
     toast.style.position = 'fixed';
     toast.style.left = '50%';
-    toast.style.top = '100px';
+    toast.style.top = '10%';
     toast.style.transform = 'translateX(-50%)';
     toast.style.backgroundColor = 'white';
     toast.style.color = 'rgb(79, 124, 172)';
