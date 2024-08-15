@@ -98,6 +98,16 @@ body {
     border-radius: 50%;
 }
 
+#indeedLogo {
+    width: 7vh;
+    height: auto;
+}
+
+#linkedInLogo {
+    width: 7vh;
+    height: auto;
+}
+
 #footer {
     display: grid;
     grid-area: footer;
