@@ -1,11 +1,25 @@
 .article {
-    margin-top: 2vh;
-    margin-left: 4vh;
-    width: 60%;
     grid-area: article;
     color: white;
+
+    margin-top: 4vh;
+    margin-left: 4vh;
+    user-select: text;
+    gap: 2vh;
 
     a {
         color: aqua;
     }
+}
+
+.projectDes h1 {
+    font-size: 2em;
+    color: rgb(79, 124, 172);
+}
+
+.projectImg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border: 6px solid rgb(158, 239, 229);
 }
