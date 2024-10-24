@@ -1,24 +1,12 @@
 .article {
     grid-area: article;
     color: white;
-    display: grid;
-    margin-top: 0;
+    margin-left: 4vh;
     user-select: text;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-areas: 
-        "articleleft articlecenter articleright";
-}
-
-.articleleft {
-    grid-area: articleleft;
 }
 
 .articleCenter {
-    grid-area: articlecenter;
-}
-
-.articleright {
-    grid-area: articleright;
+    margin-top: 4vh;
 }
 
 .text {
@@ -41,7 +29,39 @@ li {
     margin-top: 2%;
 }
 
+#profileCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#headshot {
+    display: flex;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    border: 6px solid rgb(158, 239, 229);
+}
+
 #lang {
+    display: flex;
+    color: rgb(79, 124, 172);
+    font-weight: bold;
+}
+
+#lang h2{
+    color: white;
+    font-weight: bold;
+}
+
+.history h3 {
+    font-size: 1em;
+    color: rgb(79, 124, 172);
+    font-weight: bold;
+}
+
+.education h3 {
     font-size: 1em;
     color: rgb(79, 124, 172);
     font-weight: bold;

@@ -1,9 +1,11 @@
 .article {
-    margin-top: 10%;
+    margin-top: 2vh;
+    margin-left: 4vh;
+    width: 60%;
     grid-area: article;
     color: white;
-    display: flex;
-    font-size: 2em;
-    text-align: center;
-    justify-content: center;
+
+    a {
+        color: aqua;
+    }
 }
