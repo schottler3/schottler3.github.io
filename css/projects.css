@@ -17,9 +17,14 @@
     color: rgb(79, 124, 172);
 }
 
+.projectImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .projectImg {
-    max-width: 100%;
-    max-height: 100%;
+    width: 32vw;
     object-fit: contain;
     border: 6px solid rgb(158, 239, 229);
 }
